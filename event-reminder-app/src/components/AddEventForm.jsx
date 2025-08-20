@@ -8,13 +8,13 @@ function AddEventForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const newEvent = {
+    const addEvent = {
       title,
       date,
       description,
     };
 
-    console.log("New Event Added:", newEvent);
+    console.log("New Event Added:", addEvent);
 
     // reset form after submit
     setTitle("");
@@ -24,22 +24,22 @@ function AddEventForm() {
 
   return (
     <form onSubmit={handleSubmit} className="p-4 max-w-md mx-auto bg-gray-100 rounded-lg shadow-md">
-      <h2 className="text-xl font-bold mb-4">Add New Event</h2>
+      <h2 className="text-xl font-bold mb-4">New Event</h2>
 
       <div className="mb-3">
-        <label className="block text-sm font-medium mb-1">Event Title</label>
+        <label className="block text-sm font-medium mb-1">Title</label>
         <input
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           className="w-full border px-3 py-2 rounded"
-          placeholder="Enter event title"
+          placeholder="Enter title"
           required
         />
       </div>
 
       <div className="mb-3">
-        <label className="block text-sm font-medium mb-1">Event Date</label>
+        <label className="block text-sm font-medium mb-1">Date</label>
         <input
           type="date"
           value={date}
@@ -50,12 +50,12 @@ function AddEventForm() {
       </div>
 
       <div className="mb-3">
-        <label className="block text-sm font-medium mb-1">Event Description</label>
+        <label className="block text-sm font-medium mb-1">Description</label>
         <textarea
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           className="w-full border px-3 py-2 rounded"
-          placeholder="Enter event details"
+          placeholder="Enter event"
         />
       </div>
 
