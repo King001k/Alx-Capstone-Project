@@ -1,15 +1,11 @@
-import Header from "./components/Header"
-import EventList from "./components/EventList"
+import AddEventForm from "./components/AddEventForm";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-900">
-      <Header />
-      <main className="p-4 max-w-2xl mx-auto">
-        <EventList />
-      </main>
+    <div className="min-h-screen flex items-center justify-center bg-gray-50">
+      <AddEventForm />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
