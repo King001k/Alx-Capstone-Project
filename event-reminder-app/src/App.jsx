@@ -44,7 +44,7 @@ function App() {
           onChange={(e) => setDescription(e.target.value)}
         ></textarea>
         <br />
-        <button type="submit">Add Event</button>
+        <button type="submit">Submit Event</button>
       </form>
 
       <h2>Next Events</h2>
@@ -53,7 +53,7 @@ function App() {
           <li key={event.id}>
             <strong>{event.title}</strong> - {event.date}
             <p>{event.description}</p>
-            <button onClick={() => deleteEvent(event.id)}>Delete</button>
+            <button onClick={() => deleteEvent(event.id)}>Delete Event</button>
           </li>
         ))}
       </ul>

@@ -27,7 +27,7 @@ function AddEventForm() {
       <h2 className="text-xl font-bold mb-4">New Event</h2>
 
       <div className="mb-3">
-        <label className="block text-sm font-medium mb-1">Title</label>
+        <label className="block text-sm font-medium mb-1">Title Of Event</label>
         <input
           type="text"
           value={title}
@@ -39,7 +39,7 @@ function AddEventForm() {
       </div>
 
       <div className="mb-3">
-        <label className="block text-sm font-medium mb-1">Date</label>
+        <label className="block text-sm font-medium mb-1">Date Of Event</label>
         <input
           type="date"
           value={date}
@@ -50,7 +50,7 @@ function AddEventForm() {
       </div>
 
       <div className="mb-3">
-        <label className="block text-sm font-medium mb-1">Description</label>
+        <label className="block text-sm font-medium mb-1">Add Event Description</label>
         <textarea
           value={description}
           onChange={(e) => setDescription(e.target.value)}
