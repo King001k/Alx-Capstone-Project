@@ -1,1 +1,1 @@
-# Alx-Capstone-Project. Building a Event Reminder App
+# Alx-Capstone-Project: My Event-Reminder-App: Building an Event Reminder App is aimed at helping users keep track of important and upcoming events by allowing them add, view, delete and manage reminders. As you know we sometimes forget important dates of events we are to attend and with this app, you can always keep track of all your events in one place.
