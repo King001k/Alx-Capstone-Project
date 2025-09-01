@@ -23,23 +23,24 @@ function App() {
 
   return (
     <div style={{ padding: "22px" }}>
-      <h2>New Event</h2>
+      <h2>Add New Event To List</h2>
       <form onSubmit={addEvent}>
         <input
           type="input text"
-          placeholder="Add title"
+          placeholder="Add Event title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
         <br />
         <input
           type="input date"
+          placeholder="Event date/time"
           value={date}
           onChange={(e) => setDate(e.target.value)}
         />
         <br />
         <textarea
-          placeholder="Add event"
+          placeholder="Add Description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         ></textarea>
@@ -47,7 +48,7 @@ function App() {
         <button type="submit">Submit Event</button>
       </form>
 
-      <h2>Next Events</h2>
+      <h2>Newly Added Events</h2>
       <ul>
         {events.map((event) => (
           <li key={event.id}>
